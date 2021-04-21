@@ -102,6 +102,9 @@ body {
 .single-box {
     position: relative;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-area {
@@ -129,8 +132,11 @@ body {
 .carousel-indicators>button {
     background: #000;
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
+    width: 23px !important;
+    height: 2px !important;
+    background-color: #fff !important;
+    background-clip: unset !important;
+    margin-right: 5px !important;
 }
 
 .carousel-indicators .active {
@@ -165,7 +171,6 @@ body {
     content: "";
     height: 0%;
     width: 1px;
-    /* box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1), -4px -4px 5px 0px rgba(255, 255, 255, 1), 7px 7px 20px 0px rgba(0, 0, 0, .4), 4px 4px 5px 0px rgba(0, 0, 0, .3); */
 }
 
 .btn-card:before {
@@ -228,3 +233,20 @@ body {
 .btn-card span:hover:after {
     width: 100%;
 }
+
+
+/* @media screen and (max-width:1199px) {
+    .img-area {
+        width: 90px;
+        height: 90px;
+        left: 105px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .img-area {
+        width: 90px;
+        height: 90px;
+        left: 105px;
+    }
+} */
