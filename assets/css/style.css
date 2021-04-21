@@ -130,6 +130,7 @@ body {
 }
 
 .carousel-indicators>button {
+    /* margin-top: 10%; */
     background: #000;
     border-radius: 50%;
     width: 23px !important;
