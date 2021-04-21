@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random | Number</title>
+    <title>Random | Name</title>
     <link rel="icon" href="./assets/img/dice.svg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Original+Surfer&display=swap" rel="stylesheet">
@@ -14,22 +14,23 @@
 </head>
 
 <body>
-    <div class="container-fluid number-container">
+    <div class="container-fluid name-container">
         <div class="generator-card">
             <div class="header-card">
-                <h2>Number Generator</h2>
+                <h2>Name Generator</h2>
             </div>
             <hr>
-            <div class="num-card-container">
-                <h3>Set your number Interval</h3>
-                <div class="num-card">
-                    <input type="number" placeholder="0" name="" id="startNum">
-                    <input type="number" placeholder="0" name="" id="endNum">
+            <div class="name-card-container">
+                <h3>Write and add names to list</h3>
+                <div class="name-card">
+                    <input type="text" name="" id="name_input">
+                    <button id="name_adder" class="btn-card">Add</button>
                 </div>
-                <div class="btn-rand">
-                    <button id="btn_random" class="btn-card">Rand it !</button>
+                <div id="name_list"></div>
+                <div class="btn-shuffle">
+                    <button id="btn_shuffle" class="btn-card">Shuffle!</button>
                 </div>
-                <h1 id="random_number"></h1>
+                <h1 id="random_name"></h1>
             </div>
         </div>
     </div>
@@ -40,7 +41,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script src="./assets/js/number-script.js"></script>
+    <script src="./assets/js/name-script.js"></script>
 </body>
 
 </html>

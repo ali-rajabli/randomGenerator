@@ -97,6 +97,7 @@ body {
 
 .img-text p {
     font-size: 14px;
+    letter-spacing: 1x;
 }
 
 .single-box {
@@ -238,7 +239,7 @@ body {
 
 /* =======NUMBER GENERATOR======== */
 
-.main-container {
+.number-container {
     margin-top: 15vh;
     width: 60%;
     margin: 0 auto;
@@ -282,14 +283,14 @@ body {
     text-align: center;
 }
 
-.num-card-inp {
+.num-card {
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: center;
 }
 
-.num-card-inp input {
+.num-card input {
     margin-top: 4%;
     font-size: 20px;
     width: 20%;
@@ -326,6 +327,93 @@ body {
 .num-card-container h1 {
     margin-top: 6%;
     text-align: center;
+    line-height: 100px;
+    font-size: 70px;
+    padding: 15px;
+}
+
+
+/* =======Name GENERATOR======== */
+
+.name-container {
+    margin-top: 15vh;
+    width: 70%;
+    margin: 0 auto;
+    transition-duration: 1s;
+}
+
+.name-container>.generator-card {
+    height: 600px;
+}
+
+.name-card-container>h3 {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.name-card {
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.name-card input {
+    margin-right: 2%;
+    font-size: 20px;
+    width: 180px;
+    text-align: center;
+}
+
+.name-card button {
+    font-size: 15px;
+    width: 110px;
+    text-align: center;
+}
+
+#name_adder {
+    font-size: 14px;
+    background: darkgreen;
+    text-transform: uppercase;
+    transition-duration: 1;
+}
+
+#name_adder:hover {
+    font-size: 20px;
+    color: green;
+    background: transparent;
+    border: 3px solid green;
+}
+
+#name_list {
+    width: 50%;
+    margin: 0 auto;
+    height: 150px;
+    background: #FFF;
+    overflow: auto;
+    text-align: center;
+}
+
+.btn-shuffle {
+    margin-top: 2%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#btn_shuffle {
+    width: 200px;
+}
+
+#btn_shuffle:hover {
+    font-size: 30px;
+    color: crimson;
+    text-shadow: 0 0 30px #000;
+}
+
+.name-card-container h1 {
+    margin-top: 3%;
+    text-align: center;
+    text-shadow: 0 0 20px #000;
     line-height: 100px;
     font-size: 70px;
     padding: 15px;
