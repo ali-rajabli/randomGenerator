@@ -148,6 +148,7 @@ body {
     border: none;
     color: #fff;
     font-weight: 600;
+    transition: 0.5s;
 }
 
 .btn-card span {
@@ -163,7 +164,7 @@ body {
     content: "";
     height: 0%;
     width: 1px;
-    box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1), -4px -4px 5px 0px rgba(255, 255, 255, 1), 7px 7px 20px 0px rgba(0, 0, 0, .4), 4px 4px 5px 0px rgba(0, 0, 0, .3);
+    /* box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1), -4px -4px 5px 0px rgba(255, 255, 255, 1), 7px 7px 20px 0px rgba(0, 0, 0, .4), 4px 4px 5px 0px rgba(0, 0, 0, .3); */
 }
 
 .btn-card:before {
@@ -180,7 +181,8 @@ body {
 
 .btn-card:hover {
     background: transparent;
-    color: #76aef1;
+    color: #fff;
+    font-size: 20px;
     box-shadow: none;
 }
 
@@ -198,6 +200,7 @@ body {
 .btn-card span:after {
     position: absolute;
     content: "";
+    margin-top: 5px;
     box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1), -4px -4px 5px 0px rgba(255, 255, 255, 1), 7px 7px 20px 0px rgba(0, 0, 0, .4), 4px 4px 5px 0px rgba(0, 0, 0, .3);
 }
 
