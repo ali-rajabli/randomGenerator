@@ -344,7 +344,7 @@ body {
 
 .name-container {
     margin-top: 15vh;
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     transition-duration: 1s;
 }
@@ -417,13 +417,171 @@ body {
     text-shadow: 0 0 30px #000;
 }
 
-.name-card-container h1 {
+#hr-name {
+    margin-top: 1%;
+    width: 100%;
+    color: #000;
+    border: 3px solid #000;
+}
+
+#random_name {
+    height: 160px;
+    overflow: auto;
+}
+
+.teams h1 {
+    margin-top: 2%;
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+    font-size: 20px;
+}
+
+.teams h2 {
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+    font-size: 17px;
+}
+
+
+/* =======TEAM(VS) GENERATOR======== */
+
+.vs-container {
+    margin-top: 15vh;
+    width: 70%;
+    margin: 0 auto;
+    transition-duration: 1s;
+}
+
+.vs-container>.generator-card {
+    height: 600px;
+}
+
+.vs-card-container>h3 {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.vs-card {
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.vs-card input {
+    margin-right: 2%;
+    font-size: 20px;
+    width: 180px;
+    text-align: center;
+}
+
+.vs-card button {
+    font-size: 15px;
+    width: 110px;
+    text-align: center;
+}
+
+#vs_adder {
+    font-size: 14px;
+    background: darkgreen;
+    text-transform: uppercase;
+    transition-duration: 1;
+}
+
+#vs_adder:hover {
+    font-size: 20px;
+    color: green;
+    background: transparent;
+    border: 3px solid green;
+}
+
+#vs_list {
+    width: 50%;
+    margin: 0 auto;
+    height: 150px;
+    background: #FFF;
+    overflow: auto;
+    text-align: center;
+}
+
+.btn-shuffle {
+    margin-top: 2%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#btn_shuffle {
+    width: 200px;
+}
+
+#btn_shuffle:hover {
+    font-size: 30px;
+    color: crimson;
+    text-shadow: 0 0 30px #000;
+}
+
+.vs-card-container h1 {
     margin-top: 3%;
     text-align: center;
     text-shadow: 0 0 10px #000;
     line-height: 100px;
     font-size: 70px;
     padding: 15px;
+}
+
+@media only screen and (max-width: 479px) {
+    .loader-wrapper {
+        position: fixed;
+    }
+    .number-container {
+        width: 80%;
+    }
+    .num-card-container>h3 {
+        margin-top: 9%;
+        margin-bottom: 5%;
+    }
+    .num-card input {
+        margin-top: 8%;
+        margin-bottom: 5%;
+        width: 30%;
+    }
+    .num-card-container h1 {
+        margin-top: 15%;
+    }
+    .name-container {
+        width: 85%;
+    }
+    .name-card-container>h3 {
+        font-size: 20px;
+        margin-top: 4%;
+    }
+    .name-card {
+        margin-top: 3%;
+        margin-bottom: 4%;
+    }
+    .name-card input {
+        width: 65%;
+    }
+    .name-card button {
+        margin-top: 5%;
+        font-size: 14px;
+        width: 110px;
+        text-align: center;
+    }
+    .name-card button:hover {
+        font-size: 12px;
+    }
+    #name_list {
+        width: 70%;
+        height: 130px;
+        margin-bottom: 5%;
+    }
+    #random_name {
+        height: 190px;
+    }
+    .vs-container {
+        width: 85%;
+    }
 }
 
 
@@ -433,9 +591,10 @@ body {
         height: 110px;
         left: 126px;
     }
-}
+} */
 
-@media screen and (max-width:1199px) {
+
+/* @media screen and (max-width:1199px) {
     .img-area {
         width: 90px;
         height: 90px;
@@ -444,9 +603,10 @@ body {
     .img-text p {
         font-size: 14px;
     }
-}
+} */
 
-@media only screen and (max-width: 992px) {
+
+/* @media only screen and (max-width: 992px) {
     .img-area {
         width: 80px;
         height: 80px;
@@ -459,9 +619,10 @@ body {
     .img-text p {
         font-size: 13px;
     }
-}
+} */
 
-@media only screen and (max-width: 767px) {
+
+/* @media only screen and (max-width: 767px) {
     .img-area {
         width: 150px;
         height: 150px;
@@ -474,9 +635,10 @@ body {
     .img-text p {
         font-size: 13px;
     }
-}
+} */
 
-@media only screen and (max-width: 600px) {
+
+/* @media only screen and (max-width: 600px) {
     .img-area {
         width: 150px;
         height: 150px;
@@ -489,24 +651,10 @@ body {
     .img-text p {
         font-size: 13px;
     }
-}
+} */
 
-@media only screen and (max-width: 499px) {
-    .img-area {
-        width: 140px;
-        height: 140px;
-        left: 150px;
-    }
-    .img-text h2 {
-        margin-top: 17px;
-        font-size: 23px;
-    }
-    .img-text p {
-        font-size: 13px;
-    }
-}
 
-@media only screen and (max-width: 380px) {
+/* @media only screen and (max-width: 380px) {
     .img-area {
         width: 110px;
         height: 110px;

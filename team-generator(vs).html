@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random | Name</title>
+    <title>Random | Team(vs)</title>
     <link rel="icon" href="./assets/img/dice.svg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Original+Surfer&display=swap" rel="stylesheet">
@@ -14,41 +14,23 @@
 </head>
 
 <body>
-    <div class="container-fluid name-container">
+    <div class="container-fluid vs-container">
         <div class="generator-card">
             <div class="header-card">
-                <h2>Name Generator</h2>
+                <h2>Team(vs) Generator</h2>
             </div>
             <hr>
-            <div class="name-card-container">
+            <div class="vs-card-container">
                 <h3>Write and add names to list</h3>
-                <div class="name-card">
-                    <input type="text" name="" id="name_input">
-                    <button id="name_adder" class="btn-card">Add</button>
+                <div class="vs-card">
+                    <input type="text" name="" id="vs">
+                    <button id="vs_adder" class="btn-card">Add</button>
                 </div>
-                <div id="name_list"></div>
+                <div id="vs_list"></div>
                 <div class="btn-shuffle">
-                    <button id="btn_shuffle" class="btn-card">Pick Up!</button>
+                    <button id="btn_shuffle" class="btn-card">Shuffle!</button>
                 </div>
-                <hr id="hr-name">
-                <div id="random_name">
-                    <div class="teams">
-                        <h1>Team 1</h1>
-                        <h2>User1 vs User3</h2>
-                    </div>
-                    <div class="teams">
-                        <h1>Team 2</h1>
-                        <h2>User6 vs User2</h2>
-                    </div>
-                    <div class="teams">
-                        <h1>Team 3</h1>
-                        <h2>User4 vs User5</h2>
-                    </div>
-                    <div class="teams">
-                        <h1>Team 4</h1>
-                        <h2>User7 vs User8</h2>
-                    </div>
-                </div>
+                <h1 id="random_vs"></h1>
             </div>
         </div>
     </div>
@@ -59,7 +41,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script src="./assets/js/name-script.js"></script>
+    <script src="./assets/js/team(vs)-script.js"></script>
 </body>
 
 </html>
