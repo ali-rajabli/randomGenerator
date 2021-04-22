@@ -384,8 +384,16 @@ body {
     transition-duration: 1;
 }
 
-#name_adder:hover {
+
+/* #name_adder:hover {
     font-size: 20px;
+    color: green;
+    background: transparent;
+    border: 3px solid green;
+} */
+
+#name_adder:active {
+    font-size: 16px;
     color: green;
     background: transparent;
     border: 3px solid green;
@@ -475,8 +483,8 @@ body {
     transition-duration: 1;
 }
 
-#vs_adder:hover {
-    font-size: 20px;
+#vs_adder:active {
+    font-size: 16px;
     color: green;
     background: transparent;
     border: 3px solid green;
