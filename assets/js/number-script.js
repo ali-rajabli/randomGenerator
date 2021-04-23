@@ -4,6 +4,7 @@ $(window).on('load', function() {
     }, 1000)
 })
 
+
 $('#btn_random').on('click', function() {
     var num1 = $('#startNum').val();
     var num2 = $('#endNum').val();
@@ -15,6 +16,7 @@ $('#btn_random').on('click', function() {
     for (let i = num1; i < num2; i++) {
         numbers.push(i);
     }
-    var randNum = Math.floor(Math.random() * numbers.length);
+    console.log(numbers);
+    var randNum = Math.floor(Math.random() * (num2 - num1)) + num1;
     $('#random_number').html(`${randNum}`)
 });
