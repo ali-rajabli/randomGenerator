@@ -3,15 +3,18 @@ $(window).on('load', function() {
         $('.loader-wrapper').fadeOut(400);
     }, 1000)
 })
-var num1 = $('#startNum').val();
-var num2 = $('#endNum').val();
-numbers = [];
-
-for (num1; num1 < num2; num1++) {
-    $('#random_number').html(`${num1}`)
-    numbers.push(num1);
-}
 
 $('#btn_random').on('click', function() {
-    console.log(numbers)
-})
+    var num1 = $('#startNum').val();
+    var num2 = $('#endNum').val();
+
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+    numbers = [];
+
+    for (let i = num1; i < num2; i++) {
+        numbers.push(i);
+    }
+    var randNum = Math.floor(Math.random() * numbers.length);
+    $('#random_number').html(`${randNum}`)
+});
