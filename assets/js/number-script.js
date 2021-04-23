@@ -1,8 +1,12 @@
 $(window).on('load', function() {
     setTimeout(function() {
         $('.loader-wrapper').fadeOut(400);
-    }, 1000)
+    }, 800)
 })
+
+// $(window).on('load', function() {
+//     $('.loader-wrapper').fadeOut(1000);
+// })
 
 
 $('#btn_random').on('click', function() {

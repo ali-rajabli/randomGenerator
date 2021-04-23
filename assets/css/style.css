@@ -350,18 +350,27 @@ body {
 }
 
 .name-container>.generator-card {
-    height: 600px;
+    height: 650px;
 }
 
 .name-card-container>h3 {
-    margin-top: 4%;
+    margin-top: 3%;
     text-align: center;
+}
+
+.name-card-container h4 {
+    color: #000;
 }
 
 .name-card {
     margin-top: 1.5%;
     margin-bottom: 2%;
     text-align: center;
+}
+
+.name-card input,
+button {
+    outline: none;
 }
 
 .name-card input {
@@ -381,16 +390,8 @@ body {
     font-size: 14px;
     background: darkgreen;
     text-transform: uppercase;
-    transition-duration: 1;
+    transition-duration: 1s;
 }
-
-
-/* #name_adder:hover {
-    font-size: 20px;
-    color: green;
-    background: transparent;
-    border: 3px solid green;
-} */
 
 #name_adder:active {
     font-size: 16px;
@@ -399,10 +400,24 @@ body {
     border: 3px solid green;
 }
 
+#name_clear {
+    font-size: 14px;
+    background: darkred;
+    text-transform: uppercase;
+    transition-duration: 1s;
+}
+
+#name_clear:hover {
+    font-size: 16px;
+    color: darkred;
+    background: transparent;
+    border: 3px solid darkred;
+}
+
 #name_list {
     width: 50%;
     margin: 0 auto;
-    height: 150px;
+    height: 240px;
     background: #FFF;
     overflow: auto;
     text-align: center;
@@ -439,7 +454,7 @@ body {
 }
 
 
-/* =======TEAM(VS) GENERATOR======== */
+/* ======= 1 VS 1 TEAM GENERATOR======== */
 
 .vs-container {
     margin-top: 15vh;
@@ -452,6 +467,10 @@ body {
     height: 640px;
 }
 
+.vs-card-container h4 {
+    color: #000;
+}
+
 .vs-card-container>h3 {
     margin-top: 4%;
     text-align: center;
@@ -461,6 +480,11 @@ body {
     margin-top: 1.5%;
     margin-bottom: 2%;
     text-align: center;
+}
+
+.vs-card input,
+button {
+    outline: none;
 }
 
 .vs-card input {
@@ -480,7 +504,7 @@ body {
     font-size: 14px;
     background: darkgreen;
     text-transform: uppercase;
-    transition-duration: 1;
+    transition-duration: 1s;
 }
 
 #vs_adder:active {
@@ -514,6 +538,20 @@ body {
     font-size: 30px;
     color: crimson;
     text-shadow: 0 0 30px #000;
+}
+
+#vs_clear {
+    font-size: 14px;
+    background: darkred;
+    text-transform: uppercase;
+    transition-duration: 1s;
+}
+
+#vs_clear:hover {
+    font-size: 16px;
+    color: darkred;
+    background: transparent;
+    border: 3px solid darkred;
 }
 
 #hr-vs {
@@ -577,12 +615,24 @@ body {
     .name-card button {
         margin-top: 5%;
         font-size: 14px;
-        width: 110px;
+        width: 35%;
         text-align: center;
     }
     .name-card button:hover {
         font-size: 12px;
     }
+    /* #name_adder:active {
+        font-size: 16px;
+        color: green;
+        background: transparent;
+        border: 3px solid green;
+    }
+    #name_clear:active {
+        font-size: 16px;
+        color: darkred;
+        background: transparent;
+        border: 3px solid darkred;
+    } */
     #name_list {
         width: 70%;
         height: 130px;
