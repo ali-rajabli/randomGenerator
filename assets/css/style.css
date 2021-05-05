@@ -696,17 +696,17 @@ button {
 
 @media screen and (min-width:300px) and (max-width:451px) {
     #random_vs {
-        height: 140px !important;
+        height: 140px;
     }
     .vs-card button {
         margin-top: 5%;
     }
 }
 
-@media screen and (min-width:499px) and (max-width:597px) {}
-
-#random_vs {
-    height: 170px;
+@media screen and (min-width:499px) and (max-width:597px) {
+    #random_vs {
+        height: 170px;
+    }
 }
 
 @media screen and (min-width:629px) and (max-width:909px) {
