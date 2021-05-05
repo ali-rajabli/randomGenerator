@@ -472,7 +472,7 @@ button {
 }
 
 .vs-card-container>h3 {
-    margin-top: 4%;
+    margin-top: 2%;
     text-align: center;
 }
 
@@ -523,11 +523,30 @@ button {
     text-align: center;
 }
 
-.btn-shuffle {
+.btns {
     margin-top: 2%;
     display: flex;
     text-align: center;
     justify-content: center;
+}
+
+.btns label {
+    outline: none;
+    font-size: 17px;
+    margin-left: 10px;
+    padding: 5px;
+    align-self: center;
+    text-shadow: 0 0 30px #000;
+}
+
+.btns input {
+    box-shadow: 0 0 10px #111;
+    outline: none;
+    border: 1px solid #111;
+    margin-left: 10px;
+    padding: 5px;
+    align-self: center;
+    width: 100px;
 }
 
 #btn_shuffle {
@@ -562,18 +581,9 @@ button {
 }
 
 #random_vs {
-    height: 190px;
+    height: 156px;
     overflow: auto;
 }
-
-
-/* 
-#random_vs h1 {
-    margin-top: 2%;
-    text-align: center;
-    text-shadow: 0 0 10px #000;
-    font-size: 20px;
-} */
 
 .teams h1 {
     margin-top: 2%;
@@ -630,18 +640,6 @@ button {
     .name-card button:hover {
         font-size: 12px;
     }
-    /* #name_adder:active {
-        font-size: 16px;
-        color: green;
-        background: transparent;
-        border: 3px solid green;
-    }
-    #name_clear:active {
-        font-size: 16px;
-        color: darkred;
-        background: transparent;
-        border: 3px solid darkred;
-    } */
     #name_list {
         width: 70%;
         height: 130px;
@@ -649,7 +647,6 @@ button {
     }
     #random-name {
         margin-top: 20%;
-        /* height: 190px; */
     }
     .vs-container {
         width: 85%;
@@ -686,12 +683,20 @@ button {
     .vs-container {
         width: 85%;
     }
+    #random_vs {
+        height: 155px;
+    }
 }
 
 @media screen and (min-width:441px) and (max-width:910px) {
     #random_vs {
-        /* margin-top: 3%; */
-        height: 195px;
+        height: 205px;
+    }
+}
+
+@media screen and (min-width:909px) and (max-width:1295px) {
+    #random_vs {
+        height: 180px;
     }
 }
 
