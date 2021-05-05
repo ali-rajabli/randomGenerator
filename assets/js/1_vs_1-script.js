@@ -33,15 +33,15 @@ function shuffleArray(array) {
 }
 $("#btn_shuffle").on('click', function() {
     var teams = $("#group").val().trim();
-    if (teams) {
+    if (teams !== -1) {
         $('.teams').remove();
+        shuffleArray(nameList);
         for (let i = 0; i < teams; i++) {
-            shuffleArray(nameList);
-
-            $('#random_vs').append(`<div class="teams"><h1>Team  ${i+1}</h1>
-            <h2>${nameList[i]} vs ${nameList[i]}</h2></div>`)
+            console.log($("#group").val())
+            $('#random_vs').append(`<div class="teams" id="team-${i+1}"><h1>Team  ${i+1}</h1>`)
+            $(`#team-${i+1}`).append(`<h2>${nameList[i]} vs ${nameList[i+parseInt(teams)]}</h2></div>`)
         }
     } else {
-        $('#random_vs').html(`<div class="teams"><h1>The group amount not be 0!</h1></div>`)
+        $('#random_vs').html(`<div class="teams"><h1>The group amount not be Empty!</h1></div>`)
     }
 })
