@@ -1,13 +1,13 @@
 $(window).on('load', function() {
     setTimeout(function() {
         $('.loader-wrapper').fadeOut(400);
-    }, 1000)
+    }, 800)
 })
 
 var nameList = [];
 var inp;
 $('#name_adder').on('click', function() {
-    inp = $('#name_input').val();
+    inp = $('#name_input').val().trim();
     nameList.push(inp);
     $('#name_list').append(`<h4>${inp}</h4>`);
     console.log(nameList)

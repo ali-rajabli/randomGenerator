@@ -4,14 +4,9 @@ $(window).on('load', function() {
     }, 800)
 })
 
-// $(window).on('load', function() {
-//     $('.loader-wrapper').fadeOut(1000);
-// })
-
-
 $('#btn_random').on('click', function() {
-    var num1 = $('#startNum').val();
-    var num2 = $('#endNum').val();
+    var num1 = $('#startNum').val().trim();
+    var num2 = $('#endNum').val().trim();
 
     num1 = parseInt(num1);
     num2 = parseInt(num2);

@@ -517,7 +517,7 @@ button {
 #vs_list {
     width: 50%;
     margin: 0 auto;
-    height: 150px;
+    height: 180px;
     background: #FFF;
     overflow: auto;
     text-align: center;
@@ -581,7 +581,7 @@ button {
 }
 
 #random_vs {
-    height: 156px;
+    height: 180px;
     overflow: auto;
 }
 
@@ -598,7 +598,7 @@ button {
     font-size: 17px;
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 435px) {
     .loader-wrapper {
         position: fixed;
     }
@@ -673,7 +673,7 @@ button {
     }
     #vs_list {
         width: 70%;
-        height: 130px;
+        height: 170px;
         margin-bottom: 5%;
     }
     #vs-name {
@@ -688,15 +688,36 @@ button {
     }
 }
 
-@media screen and (min-width:441px) and (max-width:910px) {
+@media screen and (max-width:300px) {
     #random_vs {
-        height: 205px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width:434px) and (max-width:463px) {
+    #random_vs {
+        height: 132px;
+    }
+    .vs-card button {
+        margin-top: 2%;
+    }
+}
+
+@media screen and (min-width:499px) and (max-width:597px) {}
+
+#random_vs {
+    height: 170px;
+}
+
+@media screen and (min-width:629px) and (max-width:909px) {
+    #random_vs {
+        height: 220px;
     }
 }
 
 @media screen and (min-width:909px) and (max-width:1295px) {
     #random_vs {
-        height: 180px;
+        height: 190px;
     }
 }
 
