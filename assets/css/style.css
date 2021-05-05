@@ -694,12 +694,12 @@ button {
     }
 }
 
-@media screen and (min-width:434px) and (max-width:463px) {
+@media screen and (min-width:300px) and (max-width:451px) {
     #random_vs {
-        height: 132px;
+        height: 140px !important;
     }
     .vs-card button {
-        margin-top: 2%;
+        margin-top: 5%;
     }
 }
 
