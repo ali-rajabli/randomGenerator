@@ -243,6 +243,104 @@ body {
     font-size: 16px;
 }
 
+@media screen and (min-width:240px) and (max-width:430px) {
+    .group {
+        padding: 5px;
+        margin: 0.25em;
+        width: 40%;
+    }
+    .group h2 {
+        margin-bottom: 2px;
+        font-size: 15px;
+    }
+    .group p {
+        margin-bottom: 2px;
+        font-size: 12px;
+    }
+    .text-area {
+        width: 60%;
+    }
+    .text-area textarea {
+        font-size: 15px;
+        width: 100% !important;
+        height: 150px !important;
+    }
+    .pergroup {
+        width: 20%;
+    }
+    .inner-container button {
+        margin-top: 8px;
+        font-size: 18px;
+        padding: 5px 12px;
+    }
+    .inner-container button:hover {
+        font-size: 21px;
+    }
+    .inner-container button:active {
+        font-size: 21px;
+    }
+    .team-card-container>h3 {
+        font-size: 20px;
+    }
+    .header-card h2 {
+        margin-top: 6px;
+        margin-bottom: 8px;
+        padding: 5px;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (min-width:430px) and (max-width:590px) {
+    .group {
+        padding: 5px;
+        margin: 0.25em;
+        width: 30%;
+    }
+    .group h2 {
+        margin-bottom: 2px;
+        font-size: 17px;
+    }
+    .group p {
+        margin-bottom: 2px;
+        font-size: 14px;
+    }
+    .text-area {
+        width: 60%;
+    }
+    .text-area textarea {
+        font-size: 17px;
+        width: 100% !important;
+        height: 150px !important;
+    }
+    .pergroup {
+        width: 20%;
+    }
+    .inner-container button {
+        margin-top: 8px;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 5px 12px;
+    }
+}
+
+@media screen and (min-width:590px) and (max-width:731px) {
+    .group {
+        display: inline-block;
+        padding: 5px;
+        margin: 0.25em;
+        width: 23%;
+    }
+    .group h2 {
+        margin-bottom: 2px;
+        font-size: 17px;
+    }
+    .group p {
+        margin-bottom: 2px;
+        font-size: 14px;
+    }
+}
+
 @media screen and (min-width:500px) {
      ::-webkit-scrollbar {
         width: 5px;
