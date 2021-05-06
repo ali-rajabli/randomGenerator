@@ -456,7 +456,8 @@ button {
 
 /* ======= RANDOM TEAM GENERATOR======== */
 
-.team-container {
+
+/* .team-container {
     margin-top: 15vh;
     width: 70%;
     margin: 0 auto;
@@ -600,7 +601,7 @@ button {
     text-align: center;
     text-shadow: 0 0 10px #000;
     font-size: 17px;
-}
+} */
 
 
 /* ======= 1 VS 1 TEAM GENERATOR======== */
