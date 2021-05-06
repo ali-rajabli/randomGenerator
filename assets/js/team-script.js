@@ -6,16 +6,14 @@ $(window).on('load', function() {
 
 $('button').on('click', function(e) {
     e.preventDefault();
-    var namespergroup = parseInt($('.pergroup').val()),
-        allnames = $('textarea').val().split('\n'),
-        allnameslen = allnames.length;
-
-    var numgroups = Math.ceil(allnameslen / namespergroup);
-
-    if ($('.numgroups').val()) {
-        numgroups = parseInt($('.numgroups').val());
-        namespergroup = allnameslen / numgroups;
+    var namespergroup = parseInt($('.pergroup').val());
+    if (namespergroup > 0) {
+        var allnames = $('textarea').val().split('\n');
+        var allnameslen = allnames.length;
+    } else {
+        $('.groups').append('<div class="group" id="group"><h2>Please Input only Positive Numbers!</h2></div>');
     }
+    var numgroups = Math.ceil(allnameslen / namespergroup);
 
     $('.groups').empty();
 
@@ -38,5 +36,5 @@ $('button').on('click', function(e) {
 $('.toggle-wrap a').on('click', function(e) {
     e.preventDefault();
     $('.wrap').toggleClass('alt');
-    $('.pergroup-wrap, .numgroups-wrap').find('input').val('');
+    $('.pergroup-wrap').find('input').val('');
 });

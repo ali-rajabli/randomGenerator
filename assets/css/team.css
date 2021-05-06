@@ -185,18 +185,6 @@ body {
     left: calc(100% - 1.6em);
 }
 
-.numgroups-wrap {
-    display: none;
-}
-
-.alt .numgroups-wrap {
-    display: inherit;
-}
-
-.alt .pergroup-wrap {
-    display: block;
-}
-
 .text-area {
     width: 50%;
 }
