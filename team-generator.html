@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random | Team(vs)</title>
+    <title>Random | Team Generator</title>
     <link rel="icon" href="./assets/img/dice.svg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Original+Surfer&display=swap" rel="stylesheet">
@@ -14,6 +14,45 @@
 </head>
 
 <body>
+    <div class="container-fluid team-container">
+        <div class="generator-card team-generator">
+            <div class="header-card">
+                <h2>Random Team Generator</h2>
+            </div>
+            <hr>
+            <div class="team-card-container">
+                <h3>Write and add names to list</h3>
+                <div class="team-card">
+                    <input id="team_input" type="text" name="">
+                    <button id="team_adder" class="btn-card">Add</button>
+                    <button id="team_clear" class="btn-card">Clear</button>
+                </div>
+                <div id="team_list"></div>
+                <div class="btns">
+                    <label for="group">Group</label>
+                    <input id="group" class="text-center" type="number" placeholder="0">
+                </div>
+                <div class="btn-shuffle">
+                    <button id="btn_shuffle" class="btn-card">Shuffle!</button>
+                </div>
+                <hr id="hr-team">
+                <div id="random_team">
+                    <div class="teams">
+                        <h1>Team 1</h1>
+                        <h2>User 1, User 2, User 3</h2>
+                    </div>
+                    <div class="teams">
+                        <h1>Team 2</h1>
+                        <h2>User 4, User 5, User 6</h2>
+                    </div>
+                    <div class="teams">
+                        <h1>Team 3</h1>
+                        <h2>User 7, User 8, User 9</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
