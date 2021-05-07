@@ -674,14 +674,40 @@ button {
     font-size: 14px;
     background: darkgreen;
     text-transform: uppercase;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
+}
+
+#vs_adder:hover {
+    color: green;
+    background: transparent;
+    border: 1px solid green;
 }
 
 #vs_adder:active {
-    font-size: 16px;
-    color: green;
+    color: #fff;
     background: transparent;
-    border: 3px solid green;
+    border: 2px solid rgb(0, 165, 0);
+    transform: translateY(-5%);
+}
+
+#vs_clear {
+    font-size: 14px;
+    background: darkred;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+}
+
+#vs_clear:hover {
+    color: darkred;
+    background: transparent;
+    border: 1px solid darkred;
+}
+
+#vs_clear:active {
+    color: #FFF;
+    background: transparent;
+    border: 2px solid rgb(180, 0, 0);
+    transform: translateY(-5%);
 }
 
 #vs_list {
@@ -701,20 +727,6 @@ button {
     font-size: 30px;
     color: crimson;
     text-shadow: 0 0 30px #000;
-}
-
-#vs_clear {
-    font-size: 14px;
-    background: darkred;
-    text-transform: uppercase;
-    transition-duration: 1s;
-}
-
-#vs_clear:hover {
-    font-size: 16px;
-    color: darkred;
-    background: transparent;
-    border: 3px solid darkred;
 }
 
 #hr-vs {
